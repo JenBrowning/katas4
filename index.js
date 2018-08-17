@@ -62,7 +62,7 @@ k1()
     function k6() {
         let destination = document.getElementById("k6");
         let newP = document.createElement("p");
-        let a = JSON.stringify(lotrCitiesArray.slice(4,8));
+        let a = JSON.stringify(lotrCitiesArray.slice(3,8));
         newP.textContent = a;
         destination.appendChild(newP);
     } 
@@ -85,7 +85,7 @@ k1()
         let destination = document.getElementById("k8");
         let newP = document.createElement("p");
         const rohanIndex = lotrCitiesArray.indexOf("Rohan");
-        lotrCitiesArray.splice(rohanIndex, 3);
+        lotrCitiesArray.splice(rohanIndex, 1);
         let a = JSON.stringify(lotrCitiesArray)
         newP.textContent = a;
         destination.appendChild(newP);
